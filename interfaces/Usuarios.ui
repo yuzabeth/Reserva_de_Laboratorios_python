@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Usuarios</class>
+ <widget class="QWidget" name="Usuarios">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>929</width>
+    <height>749</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #FFFAFA ;</string>
+  </property>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>290</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>CONTRASEÑA:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnListarUsuario">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>690</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/* Estilo base del botón */
+QPushButton {
+    background-color: #E5E7E9; /* Color de fondo */
+    color: black; /* Color del texto */
+    border: 2px solid #E5E7E9; /* Borde del botón */
+    border-radius: 4px; /* Esquinas redondeadas */
+    padding: 8px 16px; /* Espaciado interno */
+}
+
+/* Estilo al pasar el ratón sobre el botón */
+QPushButton:hover {
+    background-color: #D5DBDB; /* Nuevo color de fondo al pasar el ratón */
+    border: 2px solid #CCD1D1; /* Nuevo borde al pasar el ratón */
+    color: black; /* Nuevo color del texto al pasar el ratón */
+}
+
+/* Estilo al hacer clic en el botón */
+QPushButton:pressed {
+    background-color: #BFC9CA; /* Nuevo color de fondo al hacer clic */
+    border: 2px solid #BFC9CA; /* Nuevo borde al hacer clic */
+    color: black; /* Nuevo color del texto al hacer clic */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>     LISTAR</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Macas_Yuzabeth_TrabajoFinal/Macas_Yuzabeth_TrabajoFinal/imagenes/listarUsuario.png</normaloff>../../Macas_Yuzabeth_TrabajoFinal/Macas_Yuzabeth_TrabajoFinal/imagenes/listarUsuario.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSalirUsuario">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>690</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/* Estilo base del botón */
+QPushButton {
+    background-color: #E5E7E9; /* Color de fondo */
+    color: black; /* Color del texto */
+    border: 2px solid #E5E7E9; /* Borde del botón */
+    border-radius: 4px; /* Esquinas redondeadas */
+    padding: 8px 16px; /* Espaciado interno */
+}
+
+/* Estilo al pasar el ratón sobre el botón */
+QPushButton:hover {
+    background-color: #D5DBDB; /* Nuevo color de fondo al pasar el ratón */
+    border: 2px solid #CCD1D1; /* Nuevo borde al pasar el ratón */
+    color: black; /* Nuevo color del texto al pasar el ratón */
+}
+
+/* Estilo al hacer clic en el botón */
+QPushButton:pressed {
+    background-color: #BFC9CA; /* Nuevo color de fondo al hacer clic */
+    border: 2px solid #BFC9CA; /* Nuevo borde al hacer clic */
+    color: black; /* Nuevo color del texto al hacer clic */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>     SALIR</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Macas_Yuzabeth_TrabajoFinal/Macas_Yuzabeth_TrabajoFinal/imagenes/salir.png</normaloff>../../Macas_Yuzabeth_TrabajoFinal/Macas_Yuzabeth_TrabajoFinal/imagenes/salir.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtDireccionUsuario">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>280</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit:enabled {
+    background-color: #E5E7E9; /* Color de fondo cuando está habilitado */
+    border: 1px solid #E5E7E9; /* Borde del cuadro de texto cuando está habilitado */
+    border-radius: 4px; /* Esquinas redondeadas cuando está habilitado */
+    padding: 4px; /* Espaciado interno cuando está habilitado */
+}
+
+QLineEdit:enabled:hover {
+    background-color: #ECF0F1; /* Cambiar el color de fondo al pasar el ratón */
+}
+
+QLineEdit:enabled:focus {
+    border: 2px solid #D0D3D4 /* Cambiar el borde al obtener el foco */
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtCedulaUsuario">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>100</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit:enabled {
+    background-color: #E5E7E9; /* Color de fondo cuando está habilitado */
+    border: 1px solid #E5E7E9; /* Borde del cuadro de texto cuando está habilitado */
+    border-radius: 4px; /* Esquinas redondeadas cuando está habilitado */
+    padding: 4px; /* Espaciado interno cuando está habilitado */
+}
+
+QLineEdit:enabled:hover {
+    background-color: #ECF0F1; /* Cambiar el color de fondo al pasar el ratón */
+}
+
+QLineEdit:enabled:focus {
+    border: 2px solid #D0D3D4 /* Cambiar el borde al obtener el foco */
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnModificarUsuario">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>690</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/* Estilo base del botón */
+QPushButton {
+    background-color: #E5E7E9; /* Color de fondo */
+    color: black; /* Color del texto */
+    border: 2px solid #E5E7E9; /* Borde del botón */
+    border-radius: 4px; /* Esquinas redondeadas */
+    padding: 8px 16px; /* Espaciado interno */
+}
+
+/* Estilo al pasar el ratón sobre el botón */
+QPushButton:hover {
+    background-color: #D5DBDB; /* Nuevo color de fondo al pasar el ratón */
+    border: 2px solid #CCD1D1; /* Nuevo borde al pasar el ratón */
+    color: black; /* Nuevo color del texto al pasar el ratón */
+}
+
+/* Estilo al hacer clic en el botón */
+QPushButton:pressed {
+    background-color: #BFC9CA; /* Nuevo color de fondo al hacer clic */
+    border: 2px solid #BFC9CA; /* Nuevo borde al hacer clic */
+    color: black; /* Nuevo color del texto al hacer clic */
+}
+</string>
+   </property>
+   <property name="text">
+    <string> MODIFICAR</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Macas_Yuzabeth_TrabajoFinal/Macas_Yuzabeth_TrabajoFinal/imagenes/modificarUsuario.png</normaloff>../../Macas_Yuzabeth_TrabajoFinal/Macas_Yuzabeth_TrabajoFinal/imagenes/modificarUsuario.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtTelefonoUsuario">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>340</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit:enabled {
+    background-color: #E5E7E9; /* Color de fondo cuando está habilitado */
+    border: 1px solid #E5E7E9; /* Borde del cuadro de texto cuando está habilitado */
+    border-radius: 4px; /* Esquinas redondeadas cuando está habilitado */
+    padding: 4px; /* Espaciado interno cuando está habilitado */
+}
+
+QLineEdit:enabled:hover {
+    background-color: #ECF0F1; /* Cambiar el color de fondo al pasar el ratón */
+}
+
+QLineEdit:enabled:focus {
+    border: 2px solid #D0D3D4 /* Cambiar el borde al obtener el foco */
+}
+
+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>170</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>NOMBRE:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>410</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>CORREO:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtNombreUsuario">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>160</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit:enabled {
+    background-color: #E5E7E9; /* Color de fondo cuando está habilitado */
+    border: 1px solid #E5E7E9; /* Borde del cuadro de texto cuando está habilitado */
+    border-radius: 4px; /* Esquinas redondeadas cuando está habilitado */
+    padding: 4px; /* Espaciado interno cuando está habilitado */
+}
+
+QLineEdit:enabled:hover {
+    background-color: #ECF0F1; /* Cambiar el color de fondo al pasar el ratón */
+}
+
+QLineEdit:enabled:focus {
+    border: 2px solid #D0D3D4 /* Cambiar el borde al obtener el foco */
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tabUsuarios">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>460</y>
+     <width>871</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableWidget {
+    background-color: #F5F5F5; /* Color de fondo de la tabla */
+    border: 1px solid #F0F3F4; /* Borde de la tabla */
+    border-radius: 4px; /* Esquinas redondeadas de la tabla */
+    padding: 4px; /* Espaciado interno de la tabla */
+    gridline-color: #F0F3F4; /* Color de las líneas de la cuadrícula */
+}
+
+QTableWidget::item {
+    padding: 4px; /* Espaciado interno de las celdas */
+}
+
+QTableWidget::item:hover {
+    background-color: #ECF0F1; /* Color de fondo de la celda al pasar el ratón */
+}
+
+QTableWidget::item:selected {
+    background-color: #3498DB; /* Color de fondo de la celda seleccionada */
+    color: white; /* Color del texto en la celda seleccionada */
+}				</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtCorreoUsuario">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>400</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit:enabled {
+    background-color: #E5E7E9; /* Color de fondo cuando está habilitado */
+    border: 1px solid #E5E7E9; /* Borde del cuadro de texto cuando está habilitado */
+    border-radius: 4px; /* Esquinas redondeadas cuando está habilitado */
+    padding: 4px; /* Espaciado interno cuando está habilitado */
+}
+
+QLineEdit:enabled:hover {
+    background-color: #ECF0F1; /* Cambiar el color de fondo al pasar el ratón */
+}
+
+QLineEdit:enabled:focus {
+    border: 2px solid #D0D3D4 /* Cambiar el borde al obtener el foco */
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>230</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>APELLIDO:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnEliminarUsuario">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>690</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/* Estilo base del botón */
+QPushButton {
+    background-color: #E5E7E9; /* Color de fondo */
+    color: black; /* Color del texto */
+    border: 2px solid #E5E7E9; /* Borde del botón */
+    border-radius: 4px; /* Esquinas redondeadas */
+    padding: 8px 16px; /* Espaciado interno */
+}
+
+/* Estilo al pasar el ratón sobre el botón */
+QPushButton:hover {
+    background-color: #D5DBDB; /* Nuevo color de fondo al pasar el ratón */
+    border: 2px solid #CCD1D1; /* Nuevo borde al pasar el ratón */
+    color: black; /* Nuevo color del texto al pasar el ratón */
+}
+
+/* Estilo al hacer clic en el botón */
+QPushButton:pressed {
+    background-color: #BFC9CA; /* Nuevo color de fondo al hacer clic */
+    border: 2px solid #BFC9CA; /* Nuevo borde al hacer clic */
+    color: black; /* Nuevo color del texto al hacer clic */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>   ELIMINAR</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Macas_Yuzabeth_TrabajoFinal/Macas_Yuzabeth_TrabajoFinal/imagenes/eliminarUsuario.png</normaloff>../../Macas_Yuzabeth_TrabajoFinal/Macas_Yuzabeth_TrabajoFinal/imagenes/eliminarUsuario.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnNuevoUsuario">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>690</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/* Estilo base del botón */
+QPushButton {
+    background-color: #E5E7E9; /* Color de fondo */
+    color: black; /* Color del texto */
+    border: 2px solid #E5E7E9; /* Borde del botón */
+    border-radius: 4px; /* Esquinas redondeadas */
+    padding: 8px 16px; /* Espaciado interno */
+}
+
+/* Estilo al pasar el ratón sobre el botón */
+QPushButton:hover {
+    background-color: #D5DBDB; /* Nuevo color de fondo al pasar el ratón */
+    border: 2px solid #CCD1D1; /* Nuevo borde al pasar el ratón */
+    color: black; /* Nuevo color del texto al pasar el ratón */
+}
+
+/* Estilo al hacer clic en el botón */
+QPushButton:pressed {
+    background-color: #BFC9CA; /* Nuevo color de fondo al hacer clic */
+    border: 2px solid #BFC9CA; /* Nuevo borde al hacer clic */
+    color: black; /* Nuevo color del texto al hacer clic */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>        NUEVO</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Macas_Yuzabeth_TrabajoFinal/Macas_Yuzabeth_TrabajoFinal/imagenes/agregarUsuario.png</normaloff>../../Macas_Yuzabeth_TrabajoFinal/Macas_Yuzabeth_TrabajoFinal/imagenes/agregarUsuario.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnBuscarUsuario">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>690</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/* Estilo base del botón */
+QPushButton {
+    background-color: #E5E7E9; /* Color de fondo */
+    color: black; /* Color del texto */
+    border: 2px solid #E5E7E9; /* Borde del botón */
+    border-radius: 4px; /* Esquinas redondeadas */
+    padding: 8px 16px; /* Espaciado interno */
+}
+
+/* Estilo al pasar el ratón sobre el botón */
+QPushButton:hover {
+    background-color: #D5DBDB; /* Nuevo color de fondo al pasar el ratón */
+    border: 2px solid #CCD1D1; /* Nuevo borde al pasar el ratón */
+    color: black; /* Nuevo color del texto al pasar el ratón */
+}
+
+/* Estilo al hacer clic en el botón */
+QPushButton:pressed {
+    background-color: #BFC9CA; /* Nuevo color de fondo al hacer clic */
+    border: 2px solid #BFC9CA; /* Nuevo borde al hacer clic */
+    color: black; /* Nuevo color del texto al hacer clic */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>      BUSCAR</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Macas_Yuzabeth_TrabajoFinal/Macas_Yuzabeth_TrabajoFinal/imagenes/buscarUsuario.png</normaloff>../../Macas_Yuzabeth_TrabajoFinal/Macas_Yuzabeth_TrabajoFinal/imagenes/buscarUsuario.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>350</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>TELÉFONO:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtApellidoUsuario">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>220</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit:enabled {
+    background-color: #E5E7E9; /* Color de fondo cuando está habilitado */
+    border: 1px solid #E5E7E9; /* Borde del cuadro de texto cuando está habilitado */
+    border-radius: 4px; /* Esquinas redondeadas cuando está habilitado */
+    padding: 4px; /* Espaciado interno cuando está habilitado */
+}
+
+QLineEdit:enabled:hover {
+    background-color: #ECF0F1; /* Cambiar el color de fondo al pasar el ratón */
+}
+
+QLineEdit:enabled:focus {
+    border: 2px solid #D0D3D4 /* Cambiar el borde al obtener el foco */
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>110</y>
+     <width>55</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>CÉDULA:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBoxDocEst">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>100</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/* Estilo base del QComboBox */
+QComboBox {
+    border: 1px solid #B0B0B0; /* Borde del combobox */
+    border-radius: 5px; /* Esquinas redondeadas */
+    padding: 1px 18px 1px 3px; /* Espaciado interno */
+    min-width: 6em; /* Ancho mínimo del combobox */
+    color: #333333; /* Color del texto */
+    background-color: #E5E7E9; /* Color de fondo */
+    selection-background-color: #D5DBDB; /* Color de fondo cuando está seleccionado */
+}
+
+/* Estilo del área editable del QComboBox */
+QComboBox:editable {
+    background: #FFFFFF; /* Fondo del área editable si es un combobox editable */
+}
+
+/* Estilo del botón desplegable */
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: right center;
+    width: 20px; /* Ancho del botón desplegable */
+    border-left: 1px solid #B0B0B0; /* Borde izquierdo del botón desplegable */
+}
+
+
+/* Estilo al pasar el ratón sobre el QComboBox */
+QComboBox:hover {
+    border: 1px solid #7D7D7D; /* Borde cuando el mouse pasa sobre el combobox */
+}
+
+/* Estilo al pasar el ratón sobre el botón desplegable */
+QComboBox::drop-down:hover {
+    background: #BFC9CA; /* Fondo del botón desplegable cuando el mouse pasa sobre él */
+}
+
+/* Estilo al seleccionar una opción en el QComboBox */
+QComboBox::item:selected {
+    background-color: #A9DEF9; /* Color de fondo cuando está seleccionado */
+}
+
+/* Estilo del texto en las opciones del QComboBox */
+QComboBox::item {
+    padding: 4px; /* Espaciado interno de las opciones */
+}
+
+/* Estilo de la flecha cuando el QComboBox está desplegado */
+QComboBox:on {
+    padding-top: 3px;
+    padding-left: 4px;
+    background: #EBEBEB; /* Fondo cuando el combobox está desplegado */
+}
+
+
+</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Docente</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Estudiante</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="lblTitulo">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>10</y>
+     <width>541</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Tw Cen MT Condensed Extra Bold</family>
+     <pointsize>36</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#00007f;&quot;&gt;GESTIÓN DE USUARIOS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

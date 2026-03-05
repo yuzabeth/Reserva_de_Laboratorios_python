@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Acerca</class>
+ <widget class="QWidget" name="Acerca">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>896</width>
+    <height>527</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #FFFAFA;</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>100</y>
+     <width>541</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Descripción General:&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;La Aplicación de Reservas de Laboratorios de la Universidad de Cuenca &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;es una herramienta diseñada para simplificar el proceso de reserva &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;de laboratorios, facilitando la coordinación  eficiente  y el uso óptimo &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;de los recursos disponibles en la universidad. &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Esta aplicación fue desarrollada por &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Yuzabeth Macas &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;en la materia de lenguajes de programación&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>100</y>
+     <width>251</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../imagenes/acercaAplicacion.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSalirAcerca">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>470</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/* Estilo base del botón */
+QPushButton {
+    background-color: #E5E7E9; /* Color de fondo */
+    color: black; /* Color del texto */
+    border: 2px solid #E5E7E9; /* Borde del botón */
+    border-radius: 4px; /* Esquinas redondeadas */
+    padding: 8px 16px; /* Espaciado interno */
+}
+
+/* Estilo al pasar el ratón sobre el botón */
+QPushButton:hover {
+    background-color: #D5DBDB; /* Nuevo color de fondo al pasar el ratón */
+    border: 2px solid #CCD1D1; /* Nuevo borde al pasar el ratón */
+    color: black; /* Nuevo color del texto al pasar el ratón */
+}
+
+/* Estilo al hacer clic en el botón */
+QPushButton:pressed {
+    background-color: #BFC9CA; /* Nuevo color de fondo al hacer clic */
+    border: 2px solid #BFC9CA; /* Nuevo borde al hacer clic */
+    color: black; /* Nuevo color del texto al hacer clic */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>     SALIR</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Macas_Yuzabeth_TrabajoFinal/Macas_Yuzabeth_TrabajoFinal/imagenes/salir.png</normaloff>../../Macas_Yuzabeth_TrabajoFinal/Macas_Yuzabeth_TrabajoFinal/imagenes/salir.png</iconset>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
